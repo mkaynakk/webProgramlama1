@@ -1,0 +1,244 @@
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+.jssorb051 .i {position:absolute;cursor:pointer;}
+.jssorb051 .i .b {fill:#fff;fill-opacity:0.3;}
+.jssorb051 .i:hover .b {fill-opacity:.7;}
+.jssorb051 .iav .b {fill-opacity: 1;}
+.jssorb051 .i.idn {opacity:.3;}
+
+
+.jssora051 {display:block;position:absolute;cursor:pointer;}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+body {
+margin: 0;
+}
+ul.a{
+list-style-position: outside;
+margin-top: 7px;      
+float: right;
+}
+li {
+font-size: 20px;
+color: rgb(223, 46, 46);
+}
+
+li span { 
+color: black;
+font-size: 14px;
+}
+ovr {
+margin-top: -20px;
+margin-left: 45px;
+width: 121px;
+overflow: hidden;
+white-space: nowrap;
+display: inline-block;
+text-overflow:ellipsis; 
+color:rgb(110, 110, 110);
+font-size: 13px;
+}
+.sidebar {
+margin-top: 64.2px;
+padding: 0;
+width: 250px;
+background-color: #f1f1f1;
+position:fixed;
+height:100%;
+overflow-x:hidden;
+z-index:1 ;
+}
+
+.sidebar a {
+display: block;
+color: black;
+padding: 2px;
+text-decoration: none;
+font-size: 14px;
+}
+
+.sidebar a:hover:not(.active) {
+background-color: #e6e6ea;
+}
+board{
+background-color: white;
+width: 220px;
+min-height: 220px;
+height: auto;
+border:100px;
+border-color: rgb(245, 240, 240);
+border-radius: 6px;
+margin:25px;
+left: -9px;
+top:500px;
+position:fixed;
+line-height:1.5;
+padding-left: 2em;
+overflow-y:scroll;
+scrollbar-width: none;
+}
+
+div.content {
+margin-left: 250px;
+padding: 80px 16px;
+height: 1050px;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+width: 100%;
+height: auto;
+position: relative;
+}
+.sidebar a {float: left;}
+div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+text-align: center;
+float: none;
+}
+}
+
+.scrollable-menu {
+border-color:rgb(243, 240, 240);
+width: 200px;
+height: auto;
+max-height: 610px;
+overflow-y:scroll;
+position: fixed;
+scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+width: 0px;
+}
+.dropdown-header{
+color:#565662;
+}
+.dropdown-header:hover{
+color:#565662;
+text-decoration: none;
+}
+.dropdown-item{
+font-size: 13px;
+color:#3e3e3f;
+}
+.dropdown-item:hover{
+background-color: #e4e4e6;
+text-decoration: none;
+border-radius: 6px;
+}
+.topnav {
+overflow: hidden;
+background-color:white;
+}
+
+.topnav .search-container {
+float:left;
+}
+
+.topnav .search-container input:focus {
+outline-color: #9f5eff;
+}
+
+.topnav input[type=text] {
+width: 350px;
+padding: 6px;
+margin-top: 8px;
+margin-left: 8px;
+font-size: 17px;
+color:black;
+border:none;
+background:#e5e5e5;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+.topnav .search-container button {
+float:right;
+padding: 10px 10px;
+margin-top: 8px;
+margin-right: 16px;
+margin-left: 0.60px;
+background:#f6f6f6;
+font-size: 17px;
+border:none;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+cursor: pointer;
+}
+.topnav .search-container button:hover {
+background:#e5e5e5;
+}
+txt:hover{
+color:#9f5eff;
+}
+bg:hover{
+background:#f6f6f6;
+border-radius: 6px;
+padding: 0px 10px 7px 10px;
+}
+
+bg{
+color: black;
+padding: 0px 10px 7px 10px;
+}
+lg{
+color: black;
+border-radius: 6px;
+padding: 4px 10px 1px 10px;
+margin-left: 10px;
+}
+lg:hover{
+background:#e1e3e7;
+border-radius: 6px;
+padding: 4px 10px 1px 10px;
+margin-left: 10px;
+}
+lb{
+border-radius: 6px;
+color: black;
+padding: 6px 10px 5px 10px;
+background-color:#e4e2e288; 
+margin-left: 10px; 
+}
+lb:hover{
+background:#e1e3e7;
+border-radius: 6px;
+padding: 6px 10px 5px 10px;
+}
+lr{
+background-color:#9147ff; 
+color:white; 
+border-radius: 6px;
+padding: 5px 10px 4px 10px;
+margin-left: 10px; 
+}
+lr:hover{
+background-color:#772ce8; 
+border-radius: 6px;
+padding: 5px 10px 4px 10px;
+}
+
+.fixed {
+position: fixed;
+background: white;
+z-index: 2;
+width: 100%;
+height: 8.6%;
+}

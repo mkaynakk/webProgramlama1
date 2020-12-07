@@ -1,0 +1,400 @@
+<html>
+<head>
+<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+ 
+ 
+</head>
+<body>
+  <script type="text/javascript">
+      window.jssor_1_slider_init = function() {
+
+          var jssor_1_options = {
+            $AutoPlay: 1,
+            $SlideWidth: 720,
+            $ArrowNavigatorOptions: {
+              $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+              $Class: $JssorBulletNavigator$,
+              $SpacingX: 16,
+              $SpacingY: 16
+            }
+          };
+
+          var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+
+          var MAX_WIDTH = 980;
+
+          function ScaleSlider() {
+              var containerElement = jssor_1_slider.$Elmt.parentNode;
+              var containerWidth = containerElement.clientWidth;
+
+              if (containerWidth) {
+
+                  var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                  jssor_1_slider.$ScaleWidth(expectedWidth);
+              }
+              else {
+                  window.setTimeout(ScaleSlider, 30);
+              }
+          }
+
+          ScaleSlider();
+
+          $Jssor$.$AddEvent(window, "load", ScaleSlider);
+          $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+          $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+       
+      };
+  </script>
+      
+  <div class="container-fluid">
+    <div class="fixed">  
+          <div class="row" > 
+            <div class="col">
+             
+          <nav class="navbar navbar-expand-lg navbar-light bg-white" style="position: fixed;">
+            <a class="navbar-brand" href="#">
+              <img src="image/twitch_PNG8.png" alt="Logo" style="width:45px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><h5><txt>Gözat</txt></h5><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle-split" href="#" id="navbarDropdown" style="margin-top: -3px;"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <h5><b><bg>...</bg></b></h5>
+                  </a>
+                  <div class="dropdown-menu scrollable-menu" style role="menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-header"><b>GENEL</b></a>
+                    <a class="dropdown-item" href="#">Basın</a>
+                    <a class="dropdown-item" href="#">Blog</a>
+                    <a class="dropdown-item" href="#">Geliştiriciler</a>
+                    <a class="dropdown-item" href="#">Hakkımızda</a>
+                    <a class="dropdown-item" href="#">IGDB</a>
+                    <a class="dropdown-item" href="#">İş Olanakları</a>
+                    <a class="dropdown-item" href="#">Loot Cave - Mağaza</a>
+                    <a class="dropdown-item" href="#">Partnerler</a>
+                    <a class="dropdown-item" href="#">Reklamcılar</a>
+                    <a class="dropdown-item" href="#">Turbo</a>
+                    <a class="dropdown-item" href="#">Twitch Grift Card</a>
+                    <a class="dropdown-item" href="#">Uygulama İndirin</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-header"><b>YARDIM VE YASAL <br>
+                      BİLGİLER</b></a>
+                    <a class="dropdown-item" href="#">Çerez Politikası</a>
+                    <a class="dropdown-item" href="#">Erişilebilirlik Beyanı</a>
+                    <a class="dropdown-item" href="#">Gizlilik Politikası</a>
+                    <a class="dropdown-item" href="#">Güvenlik</a>
+                    <a class="dropdown-item" href="#">Reklam Seçenekleri</a>
+                    <a class="dropdown-item" href="#">Şartlar</a>
+                    <a class="dropdown-item" href="#">Topluluk İlkeleri</a>
+                    <a class="dropdown-item" href="#">Yardım</a>
+                  </div>        
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html"><h5><txt>Hakkında</txt></h5><span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          </div>
+          <div class="col">
+               <div class="topnav">
+                <div class="search-container">
+                  <form action="#">
+                    <input type="text" placeholder="Ara" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white" style="left: -15px;" >
+            <form class="form-inline mr-sm-2">
+                  <lg><img src="image/simge.PNG" alt="Logo"></lg>
+                  <a href="#" style=" text-decoration: none;">
+                   <lb>Oturum Aç</lb></a>
+                    <a href="#" style="text-decoration:none;">
+                      <lr>Kayıt Ol</lr></a>
+                      <lg><img src="image/profil.png" alt="Logo" style="margin-top: 0px;"></lg>
+            </form>
+              </nav>
+          </div>
+          <hr style="margin-top: 1px;">
+      </div>
+  </div>
+          <div class="sidebar">
+            <a style="font-size: 14px;"><b>ÖNERİLEN KANALLAR</b></a>
+            <a href="#home">
+              <img src="image/mithrain.jpg" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              Mithrain
+            <ul class="a"><li><span>9,2 B</span></li></ul><br/>
+            <ovr>PLAYERUNKNOWN'S BATTLEGROUNDS</ovr>
+            </a>
+            <a href="#home">
+              <img src="image/wtcnn.png" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              wtcN
+              <ul class="a"><li><span>7,5 B</span></li></ul><br/>
+              <ovr>Fortnite</ovr>
+              </a>
+            </a>
+            <a href="#home">
+              <img src="image/flash.png" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              Flashpoint
+              <ul class="a"><li><span>6,5 B</span></li></ul><br/>
+              <ovr>Among Us</ovr>
+            </a>
+            <a href="#home">
+              <img src="image/elraen.png" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              Elraen
+              <ul class="a"><li><span>8,4 B</span></li></ul><br/>
+              <ovr>Sadece Sohbet</ovr>
+            </a>
+            <a href="#home">
+              <img src="image/hype.png" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              Hype
+              <ul class="a"><li><span>1,3 B</span></li></ul><br/>
+              <ovr>Valorant</ovr>
+            </a>
+            <a href="#home">
+              <img src="image/panda.jpeg" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              PintiPanda
+              <ul class="a"><li><span>4,7 B</span></li></ul><br/>
+              <ovr>FIFA 21</ovr>
+            </a>
+            <a href="#home">
+              <img src="image/xan.png" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              XANTAREScN
+              <ul class="a"><li><span>7,9 B</span></li></ul><br/>
+              <ovr>Counter-Strike: Global Offensive</ovr>
+            </a>
+            <a href="#home">
+              <img src="image/days.png" alt="Avatar" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+              10000DAYS
+              <ul class="a"><li><span>3,2 B</span></li></ul><br/>
+              <ovr>PLAYERUNKNOWN'S BATTLEGROUNDS</ovr>
+            </a>
+            <board><h4><br><b><c style="color:#9147ff;">Twitch</c><br>topluluğuna<br>katılın!</b></h4>
+              <c style="font-size: 14.5px;">Dilediğiniz yerden en iyi<br> canlı yayınları keşfedin</c>
+              <a href="#" style="text-decoration:none; background-color: white; margin-left: -12px; margin-top: 10px;">
+                <lr>Kayıt Ol</lr></a>
+            </board>
+        </div>
+
+          <div class="content">
+            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+              
+              <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                 <video style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" />
+              </div>
+              <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+                  <div class="view">
+                      <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner" role="listbox" >
+                              <div class="carousel-item active">
+                      <video class="video-fluid" controls style="width:100%;height:100%;">
+                        <source src="video/reklam.mp4" type="video/mp4" />
+                      </video>
+                      <div class="mask rgba-indigo-light"></div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div>
+                      <div class="view">
+                          <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox" >
+                                  <div class="carousel-item active">
+                          <video class="video-fluid" controls style="width:100%;height:100%;">
+                            <source src="video/reklam.mp4" type="video/mp4" />
+                          </video>
+                          <div class="mask rgba-indigo-light"></div>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="view">
+                          <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox" >
+                                  <div class="carousel-item active">
+                          <video class="video/reklam.mp4" controls style="width:100%;height:100%;">
+                            <source src="video/reklam.mp4" type="video/mp4" />
+                          </video>
+                          <div class="mask rgba-indigo-light"></div>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="view">
+                          <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox" >
+                                  <div class="carousel-item active">
+                          <video class="video-fluid" controls style="width:100%;height:100%;">
+                            <source src="video/reklam.mp4" type="video/mp4" />
+                          </video>
+                          <div class="mask rgba-indigo-light"></div>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="view">
+                          <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox" >
+                                  <div class="carousel-item active">
+                          <video class="video-fluid" controls style="width:100%;height:100%;">
+                            <source src="video/reklam.mp4" type="video/mp4" />
+                          </video>
+                          <div class="mask rgba-indigo-light"></div>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                 
+              </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">animation</a>
+             
+              <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                  <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                      <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                          <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                      </svg>
+                  </div>
+              </div>
+            
+              <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:35px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                  </svg>
+              </div>
+              <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:35px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                  </svg>
+              </div>
+          </div>
+         <br>
+        <br>
+         <p><b style="margin-left:15px; font-size: 18px;">Seveceğinizi düşündüğümüz Canlı kanallar</b></p>
+         <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw1.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/mithrain.jpg" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt>YAYINA GELİN<br></txt>
+                   <ovr style="font-size: 13px;"><txt>Mithrain<br></txt>
+                    <txt> PLAYERUNKNOWN'S BATTLEGROUNDS</txt>           
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw2.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/wtcnn.png" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt>CS GİRİYORUZ<br></txt>
+                    <ovr style="font-size: 13px;"><txt>wtcN<br></txt>
+                      <txt> Counter-Strike: Global Offensive</txt></ovr>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw3.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/elraen.png" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt>YAYIN BAŞLIYOR!!!!<br></txt>
+                    <ovr style="font-size: 13px;"><txt>Elraen<br></txt>
+                      <txt> Sadece Sohbet</txt></ovr>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw4.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/flash.png" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt>GECE YAYINIIII<br></txt>
+                    <ovr style="font-size: 13px;"><txt>Flashpoint<br></txt>
+                      <txt>Fortnite</txt></ovr>
+                </a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw5.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/hype.png" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt> YARIŞI KAZANIYORUZ!!!<br></txt>
+                     <ovr style="font-size: 13px;"><txt>Hype<br></txt>
+                      <txt>Forza Horizon 4</txt></ovr>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw6.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/days.png" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt> PUBG REKOR KIRDIK!<br></txt>
+                    <ovr style="font-size: 13px;"><txt>10000DAYS<br></txt>
+                      <txt>PLAYERUNKNOWN'S BATTLEGROUNDS</txt></ovr>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw7.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/panda.jpeg" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt>Sohbete Bekliyoruz...<br></txt>
+                    <ovr style="font-size: 13px;"><txt>PintiPanda<br></txt>
+                      <txt>Sadece Sohbet</txt></ovr>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a>
+                  <img src="image/tw8.PNG" alt="wtcN" style="width:100%">
+                     <img src="image/xan.png" style="width:40px; border-radius: 50%; height:40px; margin-right: 5px; margin-top:10px;">
+                     <txt>YAYINA HOŞ GELDİNİZ :)<br></txt>
+                    <ovr style="font-size: 13px;"><txt>XANTAREScN<br></txt>
+                      <txt>Counter-Strike: Global Offensive </txt></ovr>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+            
+<script type="text/javascript">jssor_1_slider_init();
+</script>
+</body>
+
+</html>
